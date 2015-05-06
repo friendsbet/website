@@ -14,7 +14,6 @@ define([
         'ui.bootstrap',
         'CoreApp',
         'HeaderApp',
-        'HomeApp'
     ]);
 
     ng.element(document).ready(function () {

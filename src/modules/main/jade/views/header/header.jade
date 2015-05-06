@@ -11,8 +11,20 @@ mixin header
             ul.nav.navbar-nav
                 li(ui-sref="home",ui-sref-active="active")
                     a(href='#home') {{ ::text.leftMenu.home}}
+                li(ui-sref="about", ui-sref-active="active")
+                    a(href='#about') {{ ::text.leftMenu.about}}
+                li(ui-sref="testimonials",ui-sref-active="active")
+                    a(href='#testimonials') {{ ::text.leftMenu.testimonials}}
+                li(ui-sref="blog",ui-sref-active="active")
+                    a(href='#blog') {{ ::text.leftMenu.blog}}
+                li(ui-sref="contact",ui-sref-active="active")
+                    a(href='#contact') {{ ::text.leftMenu.contact}}
 
             ul.nav.navbar-nav.navbar-right
+                li(ui-sref="signin")
+                    a(href="signin") {{ ::text.rightMenu.signin }}
+                li(ui-sref="signup")
+                    a(href="signup") {{ ::text.rightMenu.signup }}
                 li.dropdown(dropdown="")
                     a.dropdown-toggle(dropdown-toggle="")
                         span.glyphicon.glyphicon-user

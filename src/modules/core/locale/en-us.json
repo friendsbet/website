@@ -10,14 +10,20 @@
 		"header":{
 			"appTitle":"Angular Base",
 			"leftMenu":{
-				"home":"Home"
+				"home":"Home",
+				"blog":"Blog",
+				"contact":"Contact",
+				"testimonials":"Testimonials",
+				"about":"About"
 			},
 			"rightMenu":{
 				"profile":"Profile",
 				"settings":"Settings",
 				"files":"Files",
 				"help":"Help",
-				"about":"About"
+				"about":"About",
+				"signup":"Sign up",
+				"signin":"Sign in"
 			}
 		},
 		"home":{
