@@ -19,6 +19,16 @@ mixin header
                     a(href='#blog') {{ ::text.leftMenu.blog}}
                 li(ui-sref="contact",ui-sref-active="active")
                     a(href='#contact') {{ ::text.leftMenu.contact}}
+                li(ui-sref="calendar",ui-sref-active="active")
+                    a(href='#calendar') {{ ::text.leftMenu.calendar}}
+                li(ui-sref="mygroups",ui-sref-active="active")
+                    a(href='#mygroups') {{ ::text.leftMenu.mygroups}}
+                li(ui-sref="me",ui-sref-active="active")
+                    a(href='#me') {{ ::text.leftMenu.me}}
+                li(ui-sref="bet",ui-sref-active="active")
+                    a(href='#bet') {{ ::text.leftMenu.bet}}
+                li(ui-sref="help",ui-sref-active="active")
+                    a(href='#help') {{ ::text.leftMenu.help}}
 
             ul.nav.navbar-nav.navbar-right
                 li(ui-sref="signin")

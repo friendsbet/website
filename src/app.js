@@ -6,11 +6,8 @@ define([
 
     'main/manifest',
     'core/manifest',
-    'about/manifest',
-    'contact/manifest',
-    'blog/manifest',
-    'testimonials/manifest',
-    'authentication/manifest'
+    'public/manifest',
+    'private/manifest'
 ],function(ng){
 
     var app = ng.module('app',[
@@ -24,7 +21,12 @@ define([
         'BlogApp',
         'ContactApp',
         'TestimonialsApp',
-        'AuthenticationApp'
+        'AuthenticationApp',
+        'MygroupsApp',
+        'MeApp',
+        'HelpApp',
+        'BetApp',
+        'CalendarApp'
     ]);
 
     ng.element(document).ready(function () {

@@ -14,7 +14,12 @@
 				"blog":"Blog",
 				"contact":"Contact",
 				"testimonials":"Testimonials",
-				"about":"About"
+				"about":"About",
+				"calendar":"Calendar",
+				"me":"Me",
+				"help":"Help",
+				"bet":"Bet",
+				"mygroups":"My groups"
 			},
 			"rightMenu":{
 				"profile":"Profile",

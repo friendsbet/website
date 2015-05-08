@@ -5,13 +5,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     var paths = {
-        "main":"modules/main/js",
-        "core":"modules/core/js",
-        "about":"modules/about/js",
-        "testimonials":"modules/testimonials/js",
-        "blog":"modules/blog/js",
-        "contact":"modules/contact/js",
-        "authentication":"modules/authentication/js",
+        "main": "modules/main/js",
+        "core": "modules/core/js",
+        "private": "modules/private/js",
+        "public": "modules/public/js",
         "angular": "lib/angular",
         "angular-animate": "lib/angular-animate",
         "angular-cookies": "lib/angular-cookies",
@@ -32,7 +29,7 @@ module.exports = function(grunt) {
         "jquery": "lib/jquery-2.1.3",
         "lodash": "lib/lodash",
         "polyglot": "lib/polyglot",
-        "views": path.resolve('..',buildDir, 'tmp','views')
+        "views": path.resolve('..', buildDir, 'tmp', 'views')
     };
 
     var src = 'src';
@@ -50,7 +47,7 @@ module.exports = function(grunt) {
                 paths: paths,
                 mainConfigFile: 'src/config/require.config.js',
                 out: 'target/build/webapp/app.js',
-                include: ['lib/require.js','config/require.config.js']
+                include: ['lib/require.js', 'config/require.config.js']
             }
         },
         production: {
@@ -62,7 +59,7 @@ module.exports = function(grunt) {
                 paths: paths,
                 mainConfigFile: 'src/config/require.config.js',
                 out: 'target/build/webapp/app.js',
-                include: ['lib/require.js','config/require.config.js']
+                include: ['lib/require.js', 'config/require.config.js']
             }
         }
     });
