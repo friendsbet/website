@@ -1,5 +1,6 @@
 doctype html
 include modules/main/jade/views/header/header.jade
+include modules/main/jade/views/footer/footer.jade
 html(lang='en')
     head
         link(type='text/css',rel='stylesheet',href='css/all.css')
@@ -10,3 +11,4 @@ html(lang='en')
         +header()
         div.container(ui-view="main-content")
             loading-dots
+        +footer()

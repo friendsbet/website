@@ -26,6 +26,7 @@ define([
         'MeApp',
         'HelpApp',
         'BetApp',
+        'FooterApp',
         'CalendarApp'
     ]);
 
