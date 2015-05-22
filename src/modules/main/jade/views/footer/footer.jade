@@ -1,2 +1,33 @@
 mixin footer
-    | this is the footer
+	.row.footer(ng-controller="FooterController")
+		.col-md-1
+		.col-md-2
+			h3 FriendsBet
+			li
+				a(href='#signup') {{ ::text.signup}}
+			li
+				a(href='#signin') {{ ::text.signin}}
+			li
+				a(href='#help') {{ ::text.help}}
+		.col-md-2
+			h3 Contact
+			li
+				a(href="#") {{ ::text.email}}
+			li
+				a(href="#") {{ ::text.facebook}}
+			li
+				a(href="#") {{ ::text.twitter}}
+		.col-md-2
+			h3 About
+			li
+				a(href='#testimonials') {{ ::text.testimonials}}
+			li
+				a(href='#') {{ ::text.history}}
+			li
+				a(href='#') {{ ::text.press}}
+		.col-md-2
+			div Image
+		.col-md-2
+			div Image
+		.col-md-1
+			div Image

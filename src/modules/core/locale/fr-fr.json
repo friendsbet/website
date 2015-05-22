@@ -7,6 +7,17 @@
 		}
 	},
 	"main":{
+		"footer":{
+			"signup":"Inscription",
+			"signin":"Connexion",
+			"help":"Aide",
+			"email":"Email",
+			"facebook":"Facebook",
+			"twitter":"Twitter",
+			"testimonials":"Témoignages",
+			"history":"Historique",
+			"press":"Presse"
+			},
 		"header":{
 			"appTitle":"Angular Base",
 			"leftMenu":{
