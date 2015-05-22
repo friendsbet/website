@@ -19,6 +19,7 @@
 				"me":"Moi",
 				"help":"Aide",
 				"bet":"Pari",
+				"notifications":"Notifications",
 				"about":"A propos"
 			},
 			"rightMenu":{
@@ -32,7 +33,7 @@
 			}
 		},
 		"home":{
-			"welcome":"Bienvenue sur le project angular-base"
+			"welcome":"Bienvenue sur le projet FriendsBet"
 		}
 	}
 }
