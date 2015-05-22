@@ -22,6 +22,8 @@ define([
         'ContactApp',
         'TestimonialsApp',
         'AuthenticationApp',
+        'NotificationsApp',
+        'GlobalRankingApp',
         'MygroupsApp',
         'MeApp',
         'HelpApp',
