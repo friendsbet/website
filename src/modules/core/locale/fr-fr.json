@@ -46,5 +46,10 @@
 		"home":{
 			"welcome":"Bienvenue sur le projet FriendsBet"
 		}
-	}
+	},
+		"public":{
+			"contact":{
+				"submit":"Envoyer"
+			}
+		}
 }

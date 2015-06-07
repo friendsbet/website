@@ -45,6 +45,12 @@
 		},
 		"home":{
 			"welcome":"Welcome on angular-base project"
+		}	}
+		,
+		"public":{
+			"contact":{
+				"submit":"Submit"
+			}
 		}
-	}
+
 }
