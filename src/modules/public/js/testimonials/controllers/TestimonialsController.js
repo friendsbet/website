@@ -5,7 +5,7 @@ define([
 
     TestimonialsApp.controller('TestimonialsController',['$rootScope','$scope','localeService',function($rootScope,$scope,localeService){
         $rootScope.displayToolbar = true;
-        $scope.text = localeService.data.main.home;
+        $scope.text = localeService.data.public.testimonials;
     }]);
 
 });

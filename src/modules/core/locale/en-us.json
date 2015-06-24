@@ -48,8 +48,18 @@
 		}	}
 		,
 		"public":{
+			"about":{
+				"about":"About us"
+			},
+			"blog":{
+				"blog":"Blog"
+			},
 			"contact":{
+				"contact":"Contact",
 				"submit":"Submit"
+			},
+			"testimonials":{
+				"testimonials":"Testimonials"
 			}
 		}
 
