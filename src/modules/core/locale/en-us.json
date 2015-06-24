@@ -1,70 +1,69 @@
 {
-	"core":{
-		"pageNotFound":{
-			"error":":( 404",
-			"pageMessage":"The page '%{page}' you are looking for does not exist.",
-			"homeLink":"Return home"
+	"core": {
+		"pageNotFound": {
+			"error": ":( 404",
+			"pageMessage": "The page '%{page}' you are looking for does not exist.",
+			"homeLink": "Return home"
 		}
 	},
-	"main":{
-		"authentication":{
-			"signup":"Sign up",
-			"signin":"Sign in"
+	"main": {
+		"authentication": {
+			"signup": "Sign up",
+			"signin": "Sign in"
+		},
+		"footer": {
+			"signup": "Sign up",
+			"signin": "Sign in",
+			"help": "Help",
+			"email": "Email",
+			"facebook": "Facebook",
+			"twitter": "Twitter",
+			"testimonials": "Testimonials",
+			"history": "History",
+			"press": "Press"
+		},
+		"header": {
+			"appTitle": "Friends Bet",
+			"leftMenu": {
+				"home": "Home",
+				"blog": "Blog",
+				"contact": "Contact",
+				"testimonials": "Testimonials",
+				"about": "About",
+				"calendar": "Calendar",
+				"me": "Me",
+				"help": "Help",
+				"bet": "Bet",
+				"notifications": "Notifications",
+				"mygroups": "My groups"
 			},
-			"footer":{
-			"signup":"Sign up",
-			"signin":"Sign in",
-			"help":"Help",
-			"email":"Email",
-			"facebook":"Facebook",
-			"twitter":"Twitter",
-			"testimonials":"Testimonials",
-			"history":"History",
-			"press":"Press"
-			},
-		"header":{
-			"appTitle":"Friends Bet",
-			"leftMenu":{
-				"home":"Home",
-				"blog":"Blog",
-				"contact":"Contact",
-				"testimonials":"Testimonials",
-				"about":"About",
-				"calendar":"Calendar",
-				"me":"Me",
-				"help":"Help",
-				"bet":"Bet",
-				"notifications":"Notifications",
-				"mygroups":"My groups"
-			},
-			"rightMenu":{
-				"profile":"Profile",
-				"settings":"Settings",
-				"files":"Files",
-				"help":"Help",
-				"about":"About",
-				"signup":"Sign up",
-				"signin":"Sign in"
+			"rightMenu": {
+				"profile": "Profile",
+				"settings": "Settings",
+				"files": "Files",
+				"help": "Help",
+				"about": "About",
+				"signup": "Sign up",
+				"signin": "Sign in"
 			}
 		},
-		"home":{
-			"welcome":"Welcome on angular-base project"
-		}	}
-		,
-		"public":{
-			"about":{
-				"about":"About us"
-			},
-			"blog":{
-				"blog":"Blog"
-			},
-			"contact":{
-				"contact":"Contact",
-				"submit":"Submit"
-			},
-			"testimonials":{
-				"testimonials":"Testimonials"
-			}
+		"home": {
+			"welcome": "Welcome on angular-base project"
 		}
-
+	},
+	"public": {
+		"about": {
+			"about": "About us"
+		},
+		"blog": {
+			"blog": "Blog"
+		},
+		"contact": {
+			"contact": "Contact",
+			"submit": "Submit"
+		},
+		"testimonials": {
+			"testimonials": "Testimonials"
+		}
+	}
 }

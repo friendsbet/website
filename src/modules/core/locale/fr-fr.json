@@ -1,69 +1,69 @@
 {
-	"core":{
-		"pageNotFound":{
-			"error":":( 404",
-			"pageMessage":"La page '%{page}' à laquelle vous essayez d'accéder n'existe pas.",
-			"homeLink":"Retour à la page d'accueil"
+	"core": {
+		"pageNotFound": {
+			"error": ":( 404",
+			"pageMessage": "La page '%{page}' à laquelle vous essayez d'accéder n'existe pas.",
+			"homeLink": "Retour à la page d'accueil"
 		}
 	},
-	"main":{
-		"authentication":{
-			"signup":"Inscription",
-			"signin":"Connexion"
+	"main": {
+		"authentication": {
+			"signup": "Inscription",
+			"signin": "Connexion"
+		},
+		"footer": {
+			"signup": "Inscription",
+			"signin": "Connexion",
+			"help": "Aide",
+			"email": "Email",
+			"facebook": "Facebook",
+			"twitter": "Twitter",
+			"testimonials": "Témoignages",
+			"history": "Historique",
+			"press": "Presse"
+		},
+		"header": {
+			"appTitle": "Friends Bet",
+			"leftMenu": {
+				"home": "Accueil",
+				"blog": "Blog",
+				"contact": "Contact",
+				"testimonials": "Témoignages",
+				"calendar": "Calendrier",
+				"mygroups": "Mes groupes",
+				"me": "Moi",
+				"help": "Aide",
+				"bet": "Pari",
+				"notifications": "Notifications",
+				"about": "A propos"
 			},
-		"footer":{
-			"signup":"Inscription",
-			"signin":"Connexion",
-			"help":"Aide",
-			"email":"Email",
-			"facebook":"Facebook",
-			"twitter":"Twitter",
-			"testimonials":"Témoignages",
-			"history":"Historique",
-			"press":"Presse"
-			},
-		"header":{
-			"appTitle":"Friends Bet",
-			"leftMenu":{
-				"home":"Accueil",
-				"blog":"Blog",
-				"contact":"Contact",
-				"testimonials":"Témoignages",
-				"calendar":"Calendrier",
-				"mygroups":"Mes groupes",
-				"me":"Moi",
-				"help":"Aide",
-				"bet":"Pari",
-				"notifications":"Notifications",
-				"about":"A propos"
-			},
-			"rightMenu":{
-				"profile":"Profil",
-				"settings":"Réglages",
-				"files":"Fichiers",
-				"help":"Aide",
-				"about":"A Propos",
-				"signup":"Inscription",
-				"signin":"Connexion"
+			"rightMenu": {
+				"profile": "Profil",
+				"settings": "Réglages",
+				"files": "Fichiers",
+				"help": "Aide",
+				"about": "A Propos",
+				"signup": "Inscription",
+				"signin": "Connexion"
 			}
 		},
-		"home":{
-			"welcome":"Bienvenue sur le projet FriendsBet"
+		"home": {
+			"welcome": "Bienvenue sur le projet FriendsBet"
 		}
 	},
-		"public":{
-			"about":{
-				"about":"À propos"
-			},
-			"blog":{
-				"blog":"Blog"
-			},
-			"contact":{
-				"contact":"Contact",
-				"submit":"Envoyer"
-			},
-			"testimonials":{
-				"testimonials":"Témoignages"
-			}
+	"public": {
+		"about": {
+			"about": "À propos"
+		},
+		"blog": {
+			"blog": "Blog"
+		},
+		"contact": {
+			"contact": "Contact",
+			"submit": "Envoyer"
+		},
+		"testimonials": {
+			"testimonials": "Témoignages"
 		}
+	}
 }
