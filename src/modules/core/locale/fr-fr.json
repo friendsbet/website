@@ -7,6 +7,10 @@
 		}
 	},
 	"main":{
+		"authentication":{
+			"signup":"Inscription",
+			"signin":"Connexion"
+			},
 		"footer":{
 			"signup":"Inscription",
 			"signin":"Connexion",
