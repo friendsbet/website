@@ -16,6 +16,8 @@ define([
     'core/services/MatchService',
     'core/services/GroupService',
     'core/services/BetService',
+    'core/services/TeamService',
+    'core/services/MembershipService',
     'core/services/CommonResolveStateService',
     'core/services/LocaleService'
 ],function(){
