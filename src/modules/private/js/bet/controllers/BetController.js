@@ -8,7 +8,6 @@ define([
         $scope.text = localeService.data.main.hoBet;
 
         var bet=new BetService();
-        console.log(bet)
     }]);
 
 });
