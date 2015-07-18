@@ -9,6 +9,8 @@ define([
 
     'core/directives/Spinner',
 
+    'core/models/User',
+
     'core/services/AppStateService',
     'core/services/CommonResolveStateService',
     'core/services/LocaleService'
