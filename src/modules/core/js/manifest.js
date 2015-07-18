@@ -12,6 +12,7 @@ define([
     'core/models/User',
 
     'core/services/AppStateService',
+    'core/services/UserService',
     'core/services/CommonResolveStateService',
     'core/services/LocaleService'
 ],function(){
