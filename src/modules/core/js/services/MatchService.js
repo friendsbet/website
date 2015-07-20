@@ -9,6 +9,6 @@ define([
         };
 
 
-        return MatchService;
+        return new MatchService();
     });
 });

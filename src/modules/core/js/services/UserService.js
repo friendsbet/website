@@ -9,6 +9,6 @@ define([
         };
 
 
-        return UserService;
+        return new UserService();
     });
 });

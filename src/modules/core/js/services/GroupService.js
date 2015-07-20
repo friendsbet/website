@@ -11,6 +11,6 @@ define([
         };
 
         console.log('GroupServices')
-        return GroupService;
+        return new GroupService();
     });
 });

@@ -4,12 +4,12 @@ define([
 
 ], function(ng,CoreApp) {
     CoreApp.factory('BetService',['UserService', function(UserService) {
-        var Bet = function() {
+        var BetService = function() {
             this.scoreTeamA = null;
             this.scoreTeamB = null;
         };
         console.log('BetService')
 
-        return Bet;
+        return new BetService();
     }]);
 });

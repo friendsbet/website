@@ -8,6 +8,6 @@ define([
         };
 
         console.log('MembershipService')
-        return MembershipService;
+        return new MembershipService();
     });
 });

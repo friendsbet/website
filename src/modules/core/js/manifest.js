@@ -12,6 +12,7 @@ define([
     'core/models/User',
 
     'core/services/AppStateService',
+    'core/services/ApiService',
     'core/services/UserService',
     'core/services/MatchService',
     'core/services/GroupService',

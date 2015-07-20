@@ -3,12 +3,16 @@ define([
     'core/CoreApp'
 
 ], function(ng, CoreApp) {
-    CoreApp.service('TeamService', function() {
+    CoreApp.service('TeamService', ['ApiService',function(ApiService) {
         var TeamService = function() {
-
+        	this.teams=null
         };
 
+        TeamService.prototype.getTeams=function(){
+        	ApiService.getTeams();
+        };
         console.log('TeamServices')
-        return TeamService;
-    });
+
+        return new TeamService();
+    }]);
 });
