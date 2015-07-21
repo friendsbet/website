@@ -35,7 +35,7 @@ function interceptWriteHead(response) {
     };
 }
 
-app.set('port',7000);
+app.set('port',7001);
 
 var appPath = '/';
 app.use(appPath, express.static(buildDir));

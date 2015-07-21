@@ -31,6 +31,10 @@ define([
         'FooterApp',
         'CalendarApp'
     ]);
+    app.config(['$httpProvider', function($httpProvider) {
+        //Enable cross domain with credentials calls
+        $httpProvider.defaults.withCredentials = true;
+    }]);
 
     ng.element(document).ready(function () {
         ng.bootstrap(document, ['app']);
