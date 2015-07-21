@@ -5,9 +5,10 @@ define([
 
     CalendarApp.controller('CalendarController',['$rootScope','$scope','localeService','MatchService',function($rootScope,$scope,localeService,MatchService){
         $rootScope.displayToolbar = true;
-        $scope.text = localeService.data.main.home;
+        $scope.text = localeService.data.private.calendar;
 
-        var match=new MatchService();
+        $scope.matches=MatchService.getMatches();
+        console.log($scope.matches)
     }]);
 
 });

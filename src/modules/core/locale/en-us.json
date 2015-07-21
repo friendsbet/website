@@ -65,5 +65,10 @@
 		"testimonials": {
 			"testimonials": "Testimonials"
 		}
+	},
+	"private":{
+		"calendar":{
+			"upcoming":"Upcomings matches"
+		}
 	}
 }

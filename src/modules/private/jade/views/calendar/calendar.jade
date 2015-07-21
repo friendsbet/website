@@ -1,1 +1,7 @@
-div This is the calendar page
+h1 {{::text.upcoming}}
+div(ng-repeat='match in matches')
+	.panel.panel-default.inline.col-md-3.match
+		div.pull-right{{::match.kickOffAt}}
+		hr
+		div.text-center{{::match.teamA}} vs {{::match.teamB}}
+		div.text-center{{::match.venue}}
