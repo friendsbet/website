@@ -20,6 +20,18 @@ define([
                return ApiService.httpRequest(req)
             };
 
+            MatchService.prototype.getMatch=function(matchId){
+                var req = {
+                    params:{
+                        id:matchId,
+                        populate:'[teamA,teamB]'
+                    },
+                    method: "GET",
+                    url: SERVERPATH.API + 'matches'
+                };
+               return ApiService.httpRequest(req)
+            }
+
 
             return new MatchService();
         }

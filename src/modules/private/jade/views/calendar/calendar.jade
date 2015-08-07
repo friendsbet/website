@@ -1,6 +1,7 @@
 h1 {{::text.upcoming}}
-div(ng-repeat='match in matches  | orderBy:"kickOffAt"')
-	.panel.panel-default.inline.col-md-3.match
+div(ng-repeat='match in matches | orderBy:"kickOffAt"')
+	
+	div.panel.panel-default.inline.col-md-3.match(ng-click='loadMatch(match.id)')
 		div.pull-right{{::match.kickOffAt}}
 		hr
 		div.text-center{{::match.teamA.name}} vs {{::match.teamB.name}}
