@@ -1,7 +1,7 @@
 h1 {{::text.upcoming}}
-div(ng-repeat='match in matches')
+div(ng-repeat='match in matches  | orderBy:"kickOffAt"')
 	.panel.panel-default.inline.col-md-3.match
 		div.pull-right{{::match.kickOffAt}}
 		hr
-		div.text-center{{::match.teamA}} vs {{::match.teamB}}
+		div.text-center{{::match.teamA.name}} vs {{::match.teamB.name}}
 		div.text-center{{::match.venue}}

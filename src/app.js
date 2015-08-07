@@ -25,6 +25,7 @@ define([
         'NotificationsApp',
         'GlobalRankingApp',
         'MygroupsApp',
+        'GroupApp',
         'MeApp',
         'HelpApp',
         'BetApp',
