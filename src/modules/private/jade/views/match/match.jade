@@ -11,14 +11,14 @@
 				.col-md-5
 					img
 					div{{::match.teamA.name}}
-					input(placeholder='Bet for team {{match.teamA.name}}')
+					input(type="number",placeholder='Bet for team {{match.teamA.name}}', ng-model='betA')
 				.col-md-2
 					div VERSUS
-					button.btn.btn-default Bet !
+					button.btn.btn-default(ng-click='setBet(match.id,betA,betB)') Bet !
 					h6 Importance coeff:  {{match.importance}}
 				.col-md-5
 					img
 					div{{::match.teamB.name}}
-					input(placeholder='Bet for team {{match.teamB.name}}')
+					input(type="number",placeholder='Bet for team {{match.teamB.name}}', ng-model='betB')
 			
 

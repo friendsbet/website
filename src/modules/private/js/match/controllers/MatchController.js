@@ -3,10 +3,10 @@ define([
     'private/match/MatchApp'
 ], function(ng, MatchApp) {
 
-    MatchApp.controller('MatchController', ['$rootScope', '$scope', 'localeService', 'User', 'MatchService', '$stateParams',
-        function($rootScope, $scope, localeService, User, MatchService, $stateParams) {
+    MatchApp.controller('MatchController', ['$rootScope', '$scope', 'localeService', 'User', 'MatchService', '$stateParams', 'ApiService','BetService', 
+        function($rootScope, $scope, localeService, User, MatchService, $stateParams, ApiService,BetService) {
             $rootScope.displayToolbar = true;
-            $scope.text = localeService.data.main.home;         
+            $scope.text = localeService.data.main.home;
 
             $scope.init = function($stateParams) {
                 if ($stateParams.id) {
@@ -17,10 +17,27 @@ define([
                         .error(function(response) {
                             console.log(response)
                         })
+                } else {
+                    console.log('no match')
                 }
-                else{
-                	console.log('no match')
-                }
+            }
+
+            $scope.setBet = function(matchId, betA, betB) {
+                ApiService.getCsrfToken()
+                    .success(function(token) {
+                        var userId='55c482845db50cd0352d2c2e'
+                        var score=12
+                        BetService.postBet(token._csrf,userId,matchId,betA,betB,score)
+                            .success(function(reply){
+                                console.log(reply)
+                            })
+                            .error(function(reply){
+                                console.log(reply)
+                            })
+                    })
+                    .error(function(response) {
+                        console.log(response)
+                    })
             }
 
             $scope.init($stateParams);
