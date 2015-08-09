@@ -10,15 +10,14 @@ define([
                 this.scoreTeamA = null;
                 this.scoreTeamB = null;
             };
-            BetService.prototype.postBet = function(token, userId, matchId, betA, betB, thisScore) {
+            BetService.prototype.postBet = function(token, userId, matchId, betA, betB) {
                 var req = {
                     params: {
                         _csrf: token,
                         user: userId,
                         match: matchId,
                         scoreTeamA: betA,
-                        scoreTeamB: betB,
-                        score: thisScore
+                        scoreTeamB: betB
                     },
                     method: "POST",
                     url: SERVERPATH.API + 'bets'

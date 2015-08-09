@@ -26,8 +26,7 @@ define([
                 ApiService.getCsrfToken()
                     .success(function(token) {
                         var userId='55c482845db50cd0352d2c2e'
-                        var score=12
-                        BetService.postBet(token._csrf,userId,matchId,betA,betB,score)
+                        BetService.postBet(token._csrf,userId,matchId,betA,betB)
                             .success(function(reply){
                                 console.log(reply)
                             })
