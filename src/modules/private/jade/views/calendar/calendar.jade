@@ -2,7 +2,7 @@ h1 {{::text.upcoming}}
 div(ng-repeat='match in matches | orderBy:"kickOffAt"')
 	
 	div.panel.panel-default.inline.col-md-3.match.text-center(ng-click='loadMatch(match.id)')
-		div.pull-right{{::match.kickOffAt}}
+		div.pull-right {{::match.kickOffAtFormat}}
 		hr
 		div.panel-body.no-padding
 			.col-md-4.text-left

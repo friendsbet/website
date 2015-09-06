@@ -1,7 +1,8 @@
 define([
     'angular',
-    'private/match/MatchApp'
-], function(ng, MatchApp) {
+    'private/match/MatchApp',
+    'moment',
+], function(ng, MatchApp, moment) {
 
     MatchApp.controller('MatchController', ['$rootScope', '$scope', 'localeService', 'UserService', 'MatchService', '$stateParams', 'ApiService', 'BetService',
         function($rootScope, $scope, localeService, UserService, MatchService, $stateParams, ApiService, BetService) {
@@ -12,6 +13,11 @@ define([
                 if ($stateParams.id) {
                     MatchService.getMatch($stateParams.id)
                         .success(function(response) {
+                            //Format Date
+                            response.kickOffAtFormat = moment(response.kickOffAt).format("hh:mm a, MM/DD")
+                            response.stopBetsAtFormat = moment(response.stopBetsAt).format("hh:mm a, MM/DD")
+                            response.updatedAtFormat = moment(response.updatedAt).format("hh:mm a, MM/DD")
+                            response.createdAtFormat = moment(response.createdAt).format("hh:mm a, MM/DD")
                             $scope.match = response
                         })
                         .error(function(response) {
@@ -22,7 +28,7 @@ define([
                 }
             }
 
-            $scope.setBet = function(matchId, betA, betB,user) {
+            $scope.setBet = function(matchId, betA, betB, user) {
                 ApiService.getCsrfToken()
                     .success(function(token) {
                         BetService.postBet(token._csrf, user.id, matchId, betA, betB)
@@ -41,7 +47,7 @@ define([
             $scope.getRandomUser = function() {
                 UserService.getUsersList()
                     .success(function(users) {
-                         $scope.user=users[0]
+                        $scope.user = users[0]
                     })
                     .error(function(error) {
                         console.log(error)

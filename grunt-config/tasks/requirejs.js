@@ -24,6 +24,7 @@ module.exports = function(grunt) {
         "angular-touch": "lib/angular-touch",
         "angular-ui-bootstrap": "lib/ui-bootstrap-tpls-0.12.1",
         "angular-ui-router": "lib/angular-ui-router",
+        "moment": "lib/moment",
         "d3": "lib/d3",
         "jade": "lib/jade",
         "jquery": "lib/jquery-2.1.3",

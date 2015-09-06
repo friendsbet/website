@@ -3,8 +3,8 @@
 	.col-md-2
 	.col-md-8
 		.panel.panel-default.text-center
-			div{{::match.kickOffAt}}
-			div{{::match.stopBetsAt}}
+			div Kick off at: {{::match.kickOffAtFormat}}
+			div Stop bets at: {{::match.stopBetsAtFormat}}
 			div{{::match.venue}}
 			hr
 			div.panel-body
