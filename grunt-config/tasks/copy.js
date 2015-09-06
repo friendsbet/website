@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     var localeInterfix = path.join('src','modules','core') + path.sep;
     var files = grunt.file.expandMapping([
         path.join('assets','img','*'),
+        path.join('assets','img','teams','*'),
         path.join('fonts','*'),
         path.join('src','modules','core','locale','*')
         ], dest, {

@@ -1,8 +1,16 @@
 h1 {{::text.upcoming}}
 div(ng-repeat='match in matches | orderBy:"kickOffAt"')
 	
-	div.panel.panel-default.inline.col-md-3.match(ng-click='loadMatch(match.id)')
+	div.panel.panel-default.inline.col-md-3.match.text-center(ng-click='loadMatch(match.id)')
 		div.pull-right{{::match.kickOffAt}}
 		hr
-		div.text-center{{::match.teamA.name}} vs {{::match.teamB.name}}
-		div.text-center{{::match.venue}}
+		div.panel-body.no-padding
+			.col-md-4.text-left
+				img.img-small(ng-src="assets/img/teams/{{::match.teamA.slug}}.png")
+				strong{{::match.teamA.name}}
+			.col-md-4
+				strong vs
+			.col-md-4.text-right
+				img.img-small(ng-src="assets/img/teams/{{::match.teamB.slug}}.png")
+				strong {{::match.teamB.name}}
+		div {{::match.venue}}

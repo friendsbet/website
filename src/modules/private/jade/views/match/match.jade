@@ -9,7 +9,7 @@
 			hr
 			div.panel-body
 				.col-md-5
-					img
+					img(src="assets/img/teams/{{match.teamA.slug}}.png")
 					div{{::match.teamA.name}}
 					input(type="number",placeholder='Bet for team {{match.teamA.name}}', ng-model='betA')
 				.col-md-2
@@ -17,7 +17,7 @@
 					button.btn.btn-default(ng-click='setBet(match.id,betA,betB,user)') Bet !
 					h6 Importance coeff:  {{match.importance}}
 				.col-md-5
-					img
+					img(src="assets/img/teams/{{match.teamB.slug}}.png")
 					div{{::match.teamB.name}}
 					input(type="number",placeholder='Bet for team {{match.teamB.name}}', ng-model='betB')
 
