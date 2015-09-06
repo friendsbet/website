@@ -3,8 +3,8 @@ define([
     'private/match/MatchApp'
 ], function(ng, MatchApp) {
 
-    MatchApp.controller('MatchController', ['$rootScope', '$scope', 'localeService', 'User', 'MatchService', '$stateParams', 'ApiService','BetService', 
-        function($rootScope, $scope, localeService, User, MatchService, $stateParams, ApiService,BetService) {
+    MatchApp.controller('MatchController', ['$rootScope', '$scope', 'localeService', 'UserService', 'MatchService', '$stateParams', 'ApiService', 'BetService',
+        function($rootScope, $scope, localeService, UserService, MatchService, $stateParams, ApiService, BetService) {
             $rootScope.displayToolbar = true;
             $scope.text = localeService.data.main.home;
 
@@ -22,15 +22,14 @@ define([
                 }
             }
 
-            $scope.setBet = function(matchId, betA, betB) {
+            $scope.setBet = function(matchId, betA, betB,user) {
                 ApiService.getCsrfToken()
                     .success(function(token) {
-                        var userId='55c482845db50cd0352d2c2e'
-                        BetService.postBet(token._csrf,userId,matchId,betA,betB)
-                            .success(function(reply){
+                        BetService.postBet(token._csrf, user.id, matchId, betA, betB)
+                            .success(function(reply) {
                                 console.log(reply)
                             })
-                            .error(function(reply){
+                            .error(function(reply) {
                                 console.log(reply)
                             })
                     })
@@ -39,7 +38,19 @@ define([
                     })
             }
 
+            $scope.getRandomUser = function() {
+                UserService.getUsersList()
+                    .success(function(users) {
+                         $scope.user=users[0]
+                    })
+                    .error(function(error) {
+                        console.log(error)
+                    })
+            }
+
             $scope.init($stateParams);
+            $scope.$watch("$scope.user", function(newVal, OldVal) {});
+            $scope.getRandomUser();
 
         }
     ]);
