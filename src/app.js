@@ -28,6 +28,7 @@ define([
         'GroupApp',
         'MatchApp',
         'MeApp',
+        'UserApp',
         'HelpApp',
         'BetApp',
         'FooterApp',

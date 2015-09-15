@@ -5,7 +5,8 @@ define([
     'private/globalRanking/manifest',
     'private/group/manifest',
     'private/match/manifest',
-    'private/mygroups/manifest'
+    'private/mygroups/manifest',
+    'private/user/manifest'
 ], function(){
 
 });

@@ -1,0 +1,12 @@
+
+div(ng-if='!isUser')
+	h1 UserList
+
+	div(ng-repeat='user in userList')
+
+		a(ng-href='#user/{{user.id}}') {{user.firstName}} {{user.lastName}}
+div(ng-if='isUser')
+	h1 {{thisUser.firstName}} {{thisUser.lastName}}'s profile
+	div Email : {{thisUser.email}}
+	div Score : {{thisUser.score}}
+	div Description : {{thisUser.description}}

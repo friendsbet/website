@@ -20,6 +20,17 @@ define([
                return ApiService.httpRequest(req)
         }
 
+        UserService.prototype.getUser=function(id){
+            var req = {
+                    params:{
+                        
+                    },
+                    method: "GET",
+                    url: SERVERPATH.API + 'users/'+id
+                };
+               return ApiService.httpRequest(req) 
+        }
+
         return new UserService();
     }]);
 });
