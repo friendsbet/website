@@ -5,12 +5,12 @@
 		.panel.panel-default.text-center
 			div Kick off at: {{::match.kickOffAtFormat}}
 			div Stop bets at: {{::match.stopBetsAtFormat}}
-			div{{::match.venue}}
+			div {{::match.venue}}
 			hr
 			div.panel-body
 				.col-md-5
 					img(src="assets/img/teams/{{match.teamA.slug}}.png")
-					div{{::match.teamA.name}}
+					div {{::match.teamA.name}}
 					input(type="number",placeholder='Bet for team {{match.teamA.name}}', ng-model='betA')
 				.col-md-2
 					div VERSUS
@@ -18,7 +18,7 @@
 					h6 Importance coeff:  {{match.importance}}
 				.col-md-5
 					img(src="assets/img/teams/{{match.teamB.slug}}.png")
-					div{{::match.teamB.name}}
+					div {{::match.teamB.name}}
 					input(type="number",placeholder='Bet for team {{match.teamB.name}}', ng-model='betB')
 
 

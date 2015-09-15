@@ -1,4 +1,22 @@
-.row.home-item
-	.text-center
-		h3 {{ ::text.signin }}
-div This is the signin page
+.row
+	.col-md-3
+	.col-md-6
+		form(role='form', ng-submit='' novalidate)
+			div.form-group
+				label(for='inputUsername') Email address or Username
+				input.form-control(type='text',id='inputUsername',placeholder='Enter email or username', ng-model='user.username')
+			div.form-group
+				label(for='inputPassword') Password
+				input.form-control(type='password', id='inputPassword', placeholder='Enter your password', ng-model='user.password')
+			button.btn.btn-lg.btn-block.btn-success(type='submit') Sign in
+.row.text-center
+	a Forgot you password?
+	h2 Or
+.row
+	.col-md-3
+	.col-md-6
+		button.btn.btn-facebook SIGN IN WITH FACEBOOK
+.row
+	.col-md-3
+	.col-md-6
+		button.btn.btn-twitter SIGN IN WITH TWITTER
